@@ -4,3 +4,4 @@ def caching(function):
 		if args not in computed_results:
 			computed_results[args] = function(*args)
 		return computed_results[args]
+	return new_function
